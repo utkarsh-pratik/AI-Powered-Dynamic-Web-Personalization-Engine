@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI-Powered Dynamic Web Personalization Demo</title>
+  <style>
+    .personalize > section { border: 1px solid #ccc; margin: 8px; padding: 16px; cursor: pointer; transition: background 0.2s;}
+    .highlighted { background: #fffdc1; }
+    .personalize > section:active { background: #d6f5d6; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Demo Portal</h1>
+  <div class="personalize">
+    <section data-cluster="sports">Latest in Sports</section>
+    <section data-cluster="politics">Breaking Politics</section>
+    <section data-cluster="tech">Tech Innovations</section>
+    <section data-cluster="other">Other Stories</section>
+  </div>
+  <script type="module" src="./engine/personalization-engine.js"></script>
+</body>
+</html>
